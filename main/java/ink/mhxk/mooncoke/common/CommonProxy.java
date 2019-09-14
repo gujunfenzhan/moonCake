@@ -16,6 +16,7 @@ public class CommonProxy {
     @SubscribeEvent
     public void registerItems(RegistryEvent.Register<Item> event){
         event.getRegistry().register(ModItemLoader.MOONCAKE_NORMAL);
+        event.getRegistry().register(ModItemLoader.MOONCAKE);
     }
     /*
     注册方块

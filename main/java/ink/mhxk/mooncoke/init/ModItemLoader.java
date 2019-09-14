@@ -1,5 +1,6 @@
 package ink.mhxk.mooncoke.init;
 
+import ink.mhxk.mooncoke.item.MoonCake;
 import ink.mhxk.mooncoke.item.MoonCakeNormal;
 import net.minecraft.item.Item;
 
@@ -8,4 +9,5 @@ import net.minecraft.item.Item;
  */
 public interface ModItemLoader {
     public Item MOONCAKE_NORMAL = new MoonCakeNormal().setRegistryName("mooncake_normal").setUnlocalizedName("mooncakeNormal");
+    public Item MOONCAKE = new MoonCake().setRegistryName("mooncake").setUnlocalizedName("mooncake");
 }
