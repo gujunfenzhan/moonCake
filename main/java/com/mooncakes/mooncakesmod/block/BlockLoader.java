@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
  */
 public class BlockLoader {
 	public static enum block {
-		;
+		YeYaJi(new YeYaJi());
 		private Block block;
 
 		private block(Block block) {
