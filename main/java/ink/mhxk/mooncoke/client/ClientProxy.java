@@ -1,6 +1,7 @@
 package ink.mhxk.mooncoke.client;
 
 import ink.mhxk.mooncoke.common.CommonProxy;
+import ink.mhxk.mooncoke.init.ModItemLoader;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -15,7 +16,7 @@ public class ClientProxy
 extends CommonProxy {
     @SubscribeEvent
     public void registerModels(ModelRegistryEvent event){
-
+        registerItemModel(ModItemLoader.MOONCAKE_NORMAL);
     }
     public void registerBlockModel(Block block){
         registerItemModel(Item.getItemFromBlock(block));
