@@ -1,5 +1,7 @@
 ﻿package ink.mhxk.mooncoke.client;
 
+import com.mooncakes.mooncakesmod.client.ItemRenderLoader;
+
 import ink.mhxk.mooncoke.common.CommonProxy;
 import ink.mhxk.mooncoke.init.ModItemLoader;
 import ink.mhxk.mooncoke.item.MoonCake;
