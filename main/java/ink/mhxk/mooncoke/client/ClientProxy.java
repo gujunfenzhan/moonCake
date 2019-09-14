@@ -1,4 +1,4 @@
-package ink.mhxk.mooncoke.client;
+﻿package ink.mhxk.mooncoke.client;
 
 import ink.mhxk.mooncoke.common.CommonProxy;
 import ink.mhxk.mooncoke.init.ModItemLoader;
@@ -8,6 +8,9 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 /**
  * Creative by GoldMain on 2019/9/13
@@ -31,4 +34,20 @@ extends CommonProxy {
     public void registerItemModel(Item item,int meta){
         ModelLoader.setCustomModelResourceLocation(item,meta,new ModelResourceLocation(item.getRegistryName(),"inventory"));
     }
+
+	@Override
+	public void preInit(FMLPreInitializationEvent event) {
+		super.preInit(event);
+		new ItemRenderLoader();
+	}
+
+	@Override
+	public void init(FMLInitializationEvent event) {
+		super.init(event);
+	}
+
+	@Override
+	public void postInit(FMLPostInitializationEvent event) {
+		super.postInit(event);
+	}
 }

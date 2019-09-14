@@ -34,7 +34,7 @@ extends ItemFood {
         }
     };
     public MoonCake() {
-        super(4,false);
+        super(4,true);
         this.setCreativeTab(ModCreativeTabLoader.MOONCAKE);
         this.setHasSubtypes(true);
         this.setMaxDamage(0);

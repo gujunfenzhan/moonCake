@@ -10,7 +10,7 @@ import net.minecraft.item.ItemFood;
 public class MoonCakeNormal
 extends ItemFood {
     public MoonCakeNormal() {
-        super(4,false);
+        super(4,true);
         this.setCreativeTab(ModCreativeTabLoader.MOONCAKE);
     }
 }
