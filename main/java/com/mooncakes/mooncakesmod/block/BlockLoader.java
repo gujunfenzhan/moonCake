@@ -8,6 +8,9 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
+/**
+ * Creative by TaoTie on 2019/9/14
+ */
 public class BlockLoader {
 	public static enum block {
 		;

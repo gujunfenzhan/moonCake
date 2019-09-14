@@ -7,10 +7,14 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import ink.mhxk.mooncoke.init.ModCreativeTabLoader;
 
+/**
+ * Creative by TaoTie on 2019/9/14
+ */
 public class ItemLoader {
 	public static enum item {
-		;
+		Dough(new Iitem("gough","Dough",ModCreativeTabLoader.MOONCAKE));
 		private Item item;
 
 		private item(Item item) {

@@ -37,6 +37,9 @@ extends CommonProxy {
         ModelLoader.setCustomModelResourceLocation(item,meta,new ModelResourceLocation(item.getRegistryName(),"inventory"));
     }
 
+    /**
+	 * Creative by TaoTie on 2019/9/14
+	 **/
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {
 		super.preInit(event);
