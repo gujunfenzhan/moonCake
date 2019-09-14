@@ -8,7 +8,9 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-
+/**
+ * Creative by GoldMain on 2019/9/13
+ */
 @Mod(modid = MoonCakeMain.MODID,version = MoonCakeMain.VERSION,name = MoonCakeMain.MODNAME)
 public class MoonCakeMain {
     @SidedProxy(serverSide = "ink.mhxk.mooncake.common.CommonProxy",clientSide = "ink.mhxk.mooncoke.client.ClientProxy")

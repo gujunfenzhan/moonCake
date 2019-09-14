@@ -8,7 +8,9 @@ import net.minecraft.item.ItemBlock;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-
+/**
+ * Creative by GoldMain on 2019/9/13
+ */
 public class ClientProxy
 extends CommonProxy {
     @SubscribeEvent
@@ -16,7 +18,7 @@ extends CommonProxy {
 
     }
     public void registerBlockModel(Block block){
-        registerItemModel(new ItemBlock(block).setRegistryName(block.getRegistryName()));
+        registerItemModel(Item.getItemFromBlock(block));
     }
     public void registerItemModel(Item item){
         ModelLoader.setCustomModelResourceLocation(item,0,new ModelResourceLocation(item.getRegistryName(),"inventory"));
