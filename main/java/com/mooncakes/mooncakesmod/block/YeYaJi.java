@@ -14,8 +14,8 @@ import net.minecraft.world.World;
 public class YeYaJi extends Block {
 	public YeYaJi() {
 		super(Material.IRON);
-		this.setRegistryName("a");
-		this.setUnlocalizedName("a");
+		this.setRegistryName("compressor");
+		this.setUnlocalizedName("Compressor");
 	}
 
 	@Override
