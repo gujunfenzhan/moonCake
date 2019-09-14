@@ -1,10 +1,9 @@
-﻿package ink.mhxk.mooncoke.client;
-
+package ink.mhxk.mooncoke.client;
 import com.mooncakes.mooncakesmod.client.ItemRenderLoader;
-
 import ink.mhxk.mooncoke.common.CommonProxy;
 import ink.mhxk.mooncoke.init.ModItemLoader;
 import ink.mhxk.mooncoke.item.MoonCake;
+import ink.mhxk.mooncoke.warpper.MoonCakeWarpper;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -25,9 +24,9 @@ extends CommonProxy {
         /*
         循环注册所有月饼
          */
-        for (int i = 0; i < MoonCake.MOONCAKE_NAME.size(); i++) {
-            registerItemModel(ModItemLoader.MOONCAKE,i);
-        }
+		for (int i = 0; i < MoonCakeWarpper.MOON_CAKE_WARPPER.size(); i++) {
+			registerItemModel(ModItemLoader.MOONCAKE,i);
+		}
 
     }
     public void registerBlockModel(Block block){

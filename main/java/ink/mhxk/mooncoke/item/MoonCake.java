@@ -1,10 +1,15 @@
 package ink.mhxk.mooncoke.item;
 
 import ink.mhxk.mooncoke.init.ModCreativeTabLoader;
+import ink.mhxk.mooncoke.utils.MojangPotionEffectsUtils;
+import ink.mhxk.mooncoke.warpper.MoonCakeWarpper;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.NonNullList;
+import net.minecraft.world.World;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,26 +18,7 @@ import java.util.List;
  */
 public class MoonCake
 extends ItemFood {
-    public static List<String> MOONCAKE_NAME = new ArrayList<String>(){
-        {
-            this.add("mooncakeWuRen");
-            this.add("mooncakeDouSha");
-            this.add("mooncakeTangJiangPiYan");
-            this.add("mooncakeTangJiangPiYan");
-            this.add("mooncakeYuMiRouSong");
-            this.add("mooncakeTaiShiFengMi");
-            this.add("mooncakeYuMiHeiZhiMa");
-            this.add("mooncakeLvCha");
-            this.add("mooncakeTouMingPi");
-            this.add("mooncakeJingShiTiJiang");
-            this.add("mooncakeTangSu");
-            this.add("mooncakeFengLi");
-            this.add("mooncakeJingShiHong");
-            this.add("mooncakeFengHuang");
-            this.add("mooncakeQingShi");
-            this.add("mooncakeShuangSu");
-        }
-    };
+
     public MoonCake() {
         super(4,true);
         this.setCreativeTab(ModCreativeTabLoader.MOONCAKE);
@@ -45,7 +31,7 @@ extends ItemFood {
     public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items) {
         if(this.isInCreativeTab(tab)){
             int index  =0;
-            for (String s : MOONCAKE_NAME) {
+            for (MoonCakeWarpper moonCakeWarpper : MoonCakeWarpper.MOON_CAKE_WARPPER) {
                 items.add(new ItemStack(this,1,index));
                 index++;
             }
@@ -55,7 +41,19 @@ extends ItemFood {
     @Override
     public String getUnlocalizedName(ItemStack stack) {
         int meta = stack.getMetadata();
-        return "item."+MOONCAKE_NAME.get(meta);
+        return "item."+MoonCakeWarpper.MOON_CAKE_WARPPER.get(meta).getUnNmae();
     }
+    /*
 
+     */
+    @Override
+    protected void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player) {
+        if(!worldIn.isRemote){
+            int meta = stack.getMetadata();
+            for (PotionEffect effect : MoonCakeWarpper.MOON_CAKE_WARPPER.get(meta).effects) {
+                player.addPotionEffect(MojangPotionEffectsUtils.copyPotionEffect(effect));
+            }
+        }
+        super.onFoodEaten(stack, worldIn, player);
+    }
 }
