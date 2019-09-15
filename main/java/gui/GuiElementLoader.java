@@ -34,5 +34,4 @@ public class GuiElementLoader implements IGuiHandler {
 			return null;
 		}
 	}
-
 }
