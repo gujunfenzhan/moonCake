@@ -44,7 +44,7 @@ extends ItemFood {
         return "item."+MoonCakeWarpper.MOON_CAKE_WARPPER.get(meta).getUnNmae();
     }
     /*
-
+        添加buffer
      */
     @Override
     protected void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player) {
