@@ -8,8 +8,11 @@ import net.minecraft.client.resources.I18n;
 import net.minecraft.inventory.Container;
 import net.minecraft.util.ResourceLocation;
 
+/**
+ * Creative by TaoTie on 2019/9/15
+ */
 public class GuiContainerYeYaJi extends GuiContainer {
-	public static final ResourceLocation TEXTURES = new ResourceLocation(MoonCakeMain.MODID,
+	private static final ResourceLocation TEXTURES = new ResourceLocation(MoonCakeMain.MODID,
 			"textures/gui/gui_yeyaji.png");
 
 	public GuiContainerYeYaJi(Container inventorySlotsIn) {
