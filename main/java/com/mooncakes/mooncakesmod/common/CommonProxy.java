@@ -3,6 +3,7 @@ package com.mooncakes.mooncakesmod.common;
 import com.mooncakes.mooncakesmod.block.BlockLoader;
 import com.mooncakes.mooncakesmod.item.ItemLoader;
 
+import gui.GuiElementLoader;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -17,6 +18,7 @@ public class CommonProxy {
 	}
 
 	public void init(FMLInitializationEvent event) {
+		new GuiElementLoader();
 	}
 
 	public void postInit(FMLPostInitializationEvent event) {

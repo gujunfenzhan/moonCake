@@ -3,6 +3,7 @@ package gui.YeYaJi;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
+import net.minecraft.item.ItemStack;
 
 public class ContainerYeYaJi extends Container {
 	public ContainerYeYaJi(EntityPlayer player) {
@@ -20,7 +21,7 @@ public class ContainerYeYaJi extends Container {
 	@Override
 	public boolean canInteractWith(EntityPlayer playerIn) {
 		// TODO 自动生成的方法存根
-		return false;
+		return true;
 	}
 
 }
