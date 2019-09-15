@@ -1,10 +1,11 @@
 {
-    "__createdwith": "opl's Model Creator",
+    "parent": "block/block",
     "ambientocclusion": false,
     "textures": {
         "A": "mooncake:block/m1",
         "B": "mooncake:block/m2",
-        "C": "mooncake:block/m3"
+        "C": "mooncake:block/m3",
+        "particle": "mooncake:block/m2"
     },
     "elements": [
         {
