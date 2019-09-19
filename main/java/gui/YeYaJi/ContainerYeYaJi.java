@@ -23,7 +23,6 @@ public class ContainerYeYaJi extends Container {
 
 	@Override
 	public boolean canInteractWith(EntityPlayer playerIn) {
-		// TODO 自动生成的方法存根
 		return true;
 	}
 
