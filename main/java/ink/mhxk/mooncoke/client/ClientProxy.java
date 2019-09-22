@@ -27,7 +27,7 @@ extends CommonProxy {
 		for (int i = 0; i < MoonCakeWarpper.MOON_CAKE_WARPPER.size(); i++) {
 			registerItemModel(ModItemLoader.MOONCAKE,i);
 		}
-
+		registerItemModel(ModItemLoader.PEACH,0);
     }
     public void registerBlockModel(Block block){
         registerItemModel(Item.getItemFromBlock(block),0);

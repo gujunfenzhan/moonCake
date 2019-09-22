@@ -21,6 +21,7 @@ public class CommonProxy {
 	public void registerItems(RegistryEvent.Register<Item> event) {
 		event.getRegistry().register(ModItemLoader.MOONCAKE_NORMAL);
 		event.getRegistry().register(ModItemLoader.MOONCAKE);
+		event.getRegistry().register(ModItemLoader.PEACH);
 	}
 
 	/*
