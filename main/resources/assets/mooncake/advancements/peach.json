@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": { "item": "mooncake:peach"},
+    "title": "你在想桃子!",
+    "frame": "task",
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "你在想桃子!",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "do_something": {
+      "trigger": "consume_item",
+      "conditions": {
+        "items": [
+          {
+            "item": "mooncake:peach"
+          }
+        ]
+      }
+    }
+  }
+}
