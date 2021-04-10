@@ -10,9 +10,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.NonNullList;
 import net.minecraft.world.World;
-
-import java.util.ArrayList;
-import java.util.List;
 /**
  * Creative by GoldMain on 2019/9/14
  */
