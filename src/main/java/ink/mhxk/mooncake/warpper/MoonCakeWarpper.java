@@ -1,10 +1,11 @@
-package ink.mhxk.mooncoke.warpper;
+package ink.mhxk.mooncake.warpper;
 
-import ink.mhxk.mooncoke.utils.MojangPotionEffects;
 import net.minecraft.potion.PotionEffect;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import ink.mhxk.mooncake.utils.MojangPotionEffects;
 
 /**
  * Creative by GoldMain on 2019/9/14

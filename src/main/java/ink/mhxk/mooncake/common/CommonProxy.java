@@ -1,6 +1,6 @@
-package ink.mhxk.mooncoke.common;
+package ink.mhxk.mooncake.common;
 
-import ink.mhxk.mooncoke.init.ModItemLoader;
+import ink.mhxk.mooncake.init.ModItemLoader;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;

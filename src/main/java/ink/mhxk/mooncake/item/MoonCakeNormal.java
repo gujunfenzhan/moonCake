@@ -1,6 +1,6 @@
-package ink.mhxk.mooncoke.item;
+package ink.mhxk.mooncake.item;
 
-import ink.mhxk.mooncoke.init.ModCreativeTabLoader;
+import ink.mhxk.mooncake.init.ModCreativeTabLoader;
 import net.minecraft.item.ItemFood;
 
 /**

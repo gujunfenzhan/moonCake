@@ -1,6 +1,6 @@
-package ink.mhxk.mooncoke.creativetab;
+package ink.mhxk.mooncake.creativetab;
 
-import ink.mhxk.mooncoke.init.ModItemLoader;
+import ink.mhxk.mooncake.init.ModItemLoader;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 

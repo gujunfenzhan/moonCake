@@ -1,4 +1,4 @@
-package ink.mhxk.mooncoke.utils;
+package ink.mhxk.mooncake.utils;
 
 import net.minecraft.potion.Potion;
 

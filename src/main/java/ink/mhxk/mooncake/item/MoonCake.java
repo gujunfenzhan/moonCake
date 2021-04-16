@@ -1,8 +1,8 @@
-package ink.mhxk.mooncoke.item;
+package ink.mhxk.mooncake.item;
 
-import ink.mhxk.mooncoke.init.ModCreativeTabLoader;
-import ink.mhxk.mooncoke.utils.MojangPotionEffectsUtils;
-import ink.mhxk.mooncoke.warpper.MoonCakeWarpper;
+import ink.mhxk.mooncake.init.ModCreativeTabLoader;
+import ink.mhxk.mooncake.utils.MojangPotionEffectsUtils;
+import ink.mhxk.mooncake.warpper.MoonCakeWarpper;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemFood;

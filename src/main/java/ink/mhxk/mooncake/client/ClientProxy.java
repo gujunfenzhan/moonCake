@@ -1,7 +1,7 @@
-package ink.mhxk.mooncoke.client;
-import ink.mhxk.mooncoke.common.CommonProxy;
-import ink.mhxk.mooncoke.init.ModItemLoader;
-import ink.mhxk.mooncoke.warpper.MoonCakeWarpper;
+package ink.mhxk.mooncake.client;
+import ink.mhxk.mooncake.common.CommonProxy;
+import ink.mhxk.mooncake.init.ModItemLoader;
+import ink.mhxk.mooncake.warpper.MoonCakeWarpper;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;

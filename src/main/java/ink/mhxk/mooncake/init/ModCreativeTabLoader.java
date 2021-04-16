@@ -1,6 +1,6 @@
-package ink.mhxk.mooncoke.init;
+package ink.mhxk.mooncake.init;
 
-import ink.mhxk.mooncoke.creativetab.CreativeTabMoonCake;
+import ink.mhxk.mooncake.creativetab.CreativeTabMoonCake;
 import net.minecraft.creativetab.CreativeTabs;
 
 /**

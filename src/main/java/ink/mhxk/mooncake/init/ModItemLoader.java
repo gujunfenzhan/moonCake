@@ -1,8 +1,8 @@
-package ink.mhxk.mooncoke.init;
+package ink.mhxk.mooncake.init;
 
-import ink.mhxk.mooncoke.item.MoonCake;
-import ink.mhxk.mooncoke.item.MoonCakeNormal;
-import ink.mhxk.mooncoke.item.Peach;
+import ink.mhxk.mooncake.item.MoonCake;
+import ink.mhxk.mooncake.item.MoonCakeNormal;
+import ink.mhxk.mooncake.item.Peach;
 import net.minecraft.item.Item;
 
 /**
