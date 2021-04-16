@@ -14,7 +14,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
  */
 @Mod(modid = MoonCakeMain.MODID, version = MoonCakeMain.VERSION, name = MoonCakeMain.MODNAME)
 public class MoonCakeMain {
-	@SidedProxy(serverSide = "ink.mhxk.mooncake.common.CommonProxy", clientSide = "ink.mhxk.mooncoke.client.ClientProxy")
+	@SidedProxy(serverSide = "ink.mhxk.mooncake.common.CommonProxy", clientSide = "ink.mhxk.mooncake.client.ClientProxy")
 	public static CommonProxy PROXXY;
 	public static final String MODID = "mooncake";
 	public static final String MODNAME = "MoonCake";
