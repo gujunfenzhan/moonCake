@@ -1,5 +1,7 @@
 package ink.mhxk.mooncake.common;
 
+import com.taotie.mooncake.item.ItemLoader;
+
 import ink.mhxk.mooncake.init.ModItemLoader;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -34,7 +36,7 @@ public class CommonProxy {
 	}
 	
 	public void preInit() {
-
+		new ItemLoader();
 	}
 
 	public void init() {
