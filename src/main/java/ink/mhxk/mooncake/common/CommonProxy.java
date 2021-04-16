@@ -32,4 +32,15 @@ public class CommonProxy {
 	public void registerItemBlock(RegistryEvent.Register<Item> event, Block block) {
 		event.getRegistry().register(new ItemBlock(block).setRegistryName(block.getRegistryName()));
 	}
+	
+	public void preInit() {
+
+	}
+
+	public void init() {
+	}
+
+	public void postInit() {
+
+	}
 }
