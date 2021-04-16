@@ -9,6 +9,9 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+/**
+ * Creative by TaoTie on 2021/4/16
+ */
 public class ItemLoader {
 	public ItemLoader() {
 		try {
