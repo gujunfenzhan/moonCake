@@ -16,9 +16,7 @@ extends CommonProxy {
     @SubscribeEvent
     public void registerModels(ModelRegistryEvent event){
         registerItemModel(ModItemLoader.MOONCAKE_NORMAL,0);
-        /*
-        循环注册所有月饼
-         */
+
 		for (int i = 0; i < MoonCakeWarpper.MOON_CAKE_WARPPER.size(); i++) {
 			registerItemModel(ModItemLoader.MOONCAKE,i);
 		}

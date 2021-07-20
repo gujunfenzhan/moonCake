@@ -9,7 +9,6 @@ import ink.mhxk.mooncake.utils.MojangPotionEffects;
 
 /**
  * Creative by GoldMain on 2019/9/14
- * 对月饼类包装
  */
 public class MoonCakeWarpper {
     public String unNmae;
@@ -30,10 +29,6 @@ public class MoonCakeWarpper {
 
     public static List<MoonCakeWarpper> MOON_CAKE_WARPPER = new ArrayList<MoonCakeWarpper>(){
         {
-            /*
-            需要添加药水可在后面添加
-
-             */
             this.add(new MoonCakeWarpper("mooncakeWuRen",new PotionEffect(MojangPotionEffects.SHU_DU,20*20,1)));
             this.add(new MoonCakeWarpper("mooncakeDouSha"));
             this.add(new MoonCakeWarpper("mooncakeTangJiangPiYan"));

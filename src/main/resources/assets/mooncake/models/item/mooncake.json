@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "mooncake:item/mooncake"
+    "layer0": "mooncake:items/mooncake"
   }
 }

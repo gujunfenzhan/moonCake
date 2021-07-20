@@ -1,5 +1,5 @@
 package ink.mhxk.mooncake;
 /**
  * Creative by TaoTie on 2021/7/20
- * 该包为 2019 年时的旧包，代码仅供参考，在未来版本会清除此包
+ * This package is an old package in 2019. The code is for reference only. This package will be cleared in the future version
  */

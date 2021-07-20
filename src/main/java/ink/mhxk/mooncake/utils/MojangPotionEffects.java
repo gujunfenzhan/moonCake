@@ -4,12 +4,8 @@ import net.minecraft.potion.Potion;
 
 /**
  * Creative by GoldMain on 2019/9/14
- * 药水类，包含了mojang的所有药水，方便获取
  */
 public interface MojangPotionEffects {
-    /*
-    包含所有药水
-     */
     Potion SHU_DU = Potion.getPotionById(1);
     Potion XU_RUO = Potion.getPotionById(18);
     Potion ZHONG_DU = Potion.getPotionById(19);

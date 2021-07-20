@@ -21,7 +21,7 @@ itemGroup.moon_cake=月饼
 item.Flour.name=面粉
 item.Dough.name=面团
 item.Bag.name=纸袋
-item.MoonCake=月饼
+item.MoonCake.name=月饼
 
 tile.Grinder.name=研磨机
 
