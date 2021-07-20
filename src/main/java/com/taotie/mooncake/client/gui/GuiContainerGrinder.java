@@ -22,32 +22,32 @@ public class GuiContainerGrinder extends GuiContainer {
 		super(inventorySlotsIn);
 		containerGrinder = (ContainerGrinder) inventorySlotsIn;
 		totalProcessTime = containerGrinder.getTotalProcessTime();
-		this.xSize = 176;
-		this.ySize = 166;
+		xSize = 176;
+		ySize = 166;
 	}
 
 	@Override
 	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
-		this.drawDefaultBackground();
+		drawDefaultBackground();
 		super.drawScreen(mouseX, mouseY, partialTicks);
-		this.renderHoveredToolTip(mouseX, mouseY);
+		renderHoveredToolTip(mouseX, mouseY);
 	}
 
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY) {
 		GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
-		this.mc.getTextureManager().bindTexture(TEXTURE);
-		int offsetX = (this.width - this.xSize) / 2, offsetY = (this.height - this.ySize) / 2;
+		mc.getTextureManager().bindTexture(TEXTURE);
+		int offsetX = (width - xSize) / 2, offsetY = (height - ySize) / 2;
 
-		this.drawTexturedModalRect(offsetX, offsetY, 0, 0, this.xSize, this.ySize);
-		int textureWidth = 1 + (int) Math.ceil(22.0 * containerGrinder.getProcessTime() / this.totalProcessTime);
-		this.drawTexturedModalRect(offsetX + 79, offsetY + 30, 0, 156, textureWidth, 17);
+		drawTexturedModalRect(offsetX, offsetY, 0, 0, xSize, ySize);
+		int textureWidth = 1 + (int) (24.0 * containerGrinder.getProcessTime() / totalProcessTime);
+		drawTexturedModalRect(offsetX + 80, offsetY + 35, 176, 0, textureWidth, 17);
 	}
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
 		String tile = I18n.format("grinder.1.desc");
-		this.fontRenderer.drawString(tile, (this.xSize - this.fontRenderer.getStringWidth(tile)) / 2, 6, 0x404040);
+		fontRenderer.drawString(tile, (this.xSize - this.fontRenderer.getStringWidth(tile)) / 2, 6, 0x404040);
 		super.drawGuiContainerForegroundLayer(mouseX, mouseY);
 	}
 

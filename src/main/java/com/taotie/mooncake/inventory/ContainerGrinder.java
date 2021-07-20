@@ -16,7 +16,6 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class ContainerGrinder extends Container {
 	public TileEntityGrinder _tileEntity;
 	private int processTime = 0;
-	private int totalProcessTime = 0;
 
 	public ContainerGrinder(EntityPlayer player, TileEntity tileEntity) {
 		super();
@@ -66,11 +65,10 @@ public class ContainerGrinder extends Container {
 	}
 
 	public int getTotalProcessTime() {
-		return totalProcessTime;
+		return _tileEntity.getTotalProcessTime();
 	}
 	
 	public int getProcessTime() {
 		return processTime;
 	}
-
 }
