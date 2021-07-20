@@ -1,4 +1,4 @@
-# MoonCake
+# MoonCake MMC
 这个Mod里有很多花里胡哨的月饼(?)
 
 (?)

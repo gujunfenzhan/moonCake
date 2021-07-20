@@ -1,7 +1,5 @@
 package com.taotie.mooncake.item;
 
-import java.lang.reflect.Field;
-
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
@@ -9,16 +7,14 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-/**
- * Creative by TaoTie on 2021/4/16
- */
+import java.lang.reflect.Field;
+
 public class ItemLoader {
 	public ItemLoader() {
 		try {
-			Class<ItemList> clazz = ItemList.class;
-			for (Field field : clazz.getFields()) {
-				Item item = (Item) field.get(null);
-				register(item);
+			ModItems modItems = new ModItems();
+			for (Field field : ModItems.class.getFields()) {
+				register((Item) field.get(modItems));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -28,10 +24,9 @@ public class ItemLoader {
 	@SideOnly(Side.CLIENT)
 	public static void registerRenders() {
 		try {
-			Class<ItemList> clazz = ItemList.class;
-			for (Field field : clazz.getFields()) {
-				Item item = (Item) field.get(null);
-				register(item);
+			ModItems modItems = new ModItems();
+			for (Field field : ModItems.class.getFields()) {
+				registerRender((Item) field.get(modItems));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
