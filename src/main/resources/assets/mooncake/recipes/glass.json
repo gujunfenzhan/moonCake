@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "mooncake:glass",
+    "pattern": [
+        "# #",
+        "# #",
+        " # "
+    ],
+    "key": {
+        "#": { "item": "minecraft:glass" }
+    },
+    "result":{
+        "item":"mooncake:glass",
+        "data":0,
+        "count":4
+    }
+}

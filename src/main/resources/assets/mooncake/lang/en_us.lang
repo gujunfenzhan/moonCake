@@ -18,16 +18,13 @@ item.mooncakeShuangSu.name=双酥月饼
 item.peach.name=桃子
 
 itemGroup.moon_cake=月饼
-item.Flour.name=面粉
-item.Dough.name=面团
-item.Bag.name=纸袋
-item.MoonCake.name=月饼
-item.Glass.name=玻璃杯
-item.glassWater.name=水杯
+item.Flour.name=Flour
+item.Dough.name=Dough
+item.Bag.name=Bag
+item.MoonCake.name=MoonCake
 
-tile.Grinder.name=研磨机
+tile.Grinder.name=Grinder
 
-grinder.1.desc=研磨机
+grinder.1.desc=Grinder
 
-flour.inf=剩余使用次数：
-glass.inf=剩余使用次数：
+flour.inf=Remaining usage times:
