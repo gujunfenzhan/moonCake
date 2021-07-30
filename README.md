@@ -7,3 +7,4 @@
 
 下载地址：[这是下载地址](https://github.com/gujunfenzhan/moonCake/releases)
 
+目前停更，(doge)

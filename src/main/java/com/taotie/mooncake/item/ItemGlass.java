@@ -7,6 +7,7 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.potion.PotionUtils;
 import net.minecraft.util.NonNullList;
 import net.minecraft.world.World;
 
@@ -43,6 +44,12 @@ public class ItemGlass extends  BaseItem implements IItemColor {
         int meta = stack.getMetadata();
         return "item."+ GLASS_WARPPER[meta];
     }
+
+    //@Override
+    //public String getItemStackDisplayName(ItemStack stack)
+    //{
+    //    return net.minecraft.util.text.translation.I18n.translateToLocal(PotionUtils.getPotionFromItem(stack).getNamePrefixed("potion.effect."));
+    //}
 
     @Override
     public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
